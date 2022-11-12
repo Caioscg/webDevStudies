@@ -1,0 +1,27 @@
+<script>
+
+    function Person(name) {
+        this.name= name            // o this referencia qlqr elemento criado no programa que recebe o new Person
+        this.walk = function() {
+            return this.name + " esta andando"
+        }
+    }
+    const caio = new Person("caio")
+    const joao = new Person("joao")
+
+    console.log(caio.walk())
+    console.log(joao.walk())
+
+    let date = new Date("2022-09-26")
+    console.log(date)
+
+    //criando array com construtor
+    let myArray = new Array("a", "b", "c")
+    console.log(myArray)
+    
+    //sem construtor
+    let array2 = ["a", "b", "c"]
+
+    console.log(array2)
+
+</script>

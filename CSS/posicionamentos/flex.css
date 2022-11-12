@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+
+}
+.container{
+    width: 100vw; /*assim fica sempre no meio*/
+    display:flex;
+    justify-content: space-between;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.chest{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.purple{
+    background-color: purple;
+}
+.orange{
+    background-color: orange;
+}
+.brown{
+    background-color: brown;
+}

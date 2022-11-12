@@ -1,0 +1,17 @@
+.flexbox{
+    display: flex;
+    font-size: 100px;
+    border: dashed 1px red;
+    height: 100px;
+    width: 500px;
+}
+.item{
+    border: 1px solid;
+    flex-basis: 100%;
+}
+.item:nth-child(2),
+.item:nth-child(1) {
+    flex-shrink: 0;
+}
+
+/*shorthand: flex: 1(grow) 0(shrink) 40px(basis)

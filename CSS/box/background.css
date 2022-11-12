@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+  }
+  header{
+    color:antiquewhite;
+    font-size: 50px;
+    border: 15px dashed green;
+    width: 1000px;
+    height: 1000px;
+    padding: 100px; /*so para a escrita*/
+    background-color: brown;
+    background-image: url(color.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box; /*padding na imagem*/
+    background-clip: padding-box;/*border nao preenchida*/
+  }
+  div{
+    color:blue;
+    font-size: 50px;
+    border: 1px solid red;
+    background-color: rgb(100, 200, 70);
+    background-image: url(color.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: padding-box;
+    background-attachment: fixed;
+  }
+  #box {
+    border: 1px double aqua;
+    width: 1000px;
+    height: 1000px;
+    padding: 100px;
+    background: linear-gradient(45deg, red, green, blue);
+  }
+
+  /* o shorthand seria assim:
+  background: green url(foto.jpg) no repeat right top / 50px border-box content-box fixed;
+  origin antes do clip!
+  */

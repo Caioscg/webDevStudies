@@ -1,0 +1,35 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+}
+
+.box1{
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5; /*camada mais externa, sobrescreve os outros*/
+}
+.box2{
+    background-color: green;
+    margin: 20px;
+} /*por causa do absulute no red, o green ocupa o seu lugar original*/
+.box3{
+    background-color: blue;
+    position: relative;
+    left: 60px;
+    top: 30px;
+}
+.box4{
+    background-color: purple;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.box5{
+    background-color: orchid;
+    position: fixed;
+    left: 20px;
+    top: 40px;
+}

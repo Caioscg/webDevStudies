@@ -1,0 +1,24 @@
+h1{
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    /*nesse caso ta usando a serif, pois nao tenho as outras*/
+    font-family: 'Roboto Condensed', sans-serif; 
+    /*baixei a fonte no fonts.google.com*/
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 3px 3px 3px red;
+}
+
+/*outros comandos:
+font-size
+font-stretch(expanded ou condensed)
+font-variant: small-caps
+line-height 1.2 - espaço entre linhas
+text-transform(captalize-iniciais maiusculas/uppercas-todas maiusculas/lowercase-tdas minusculas)
+text-decoration
+shorthand seria assim:
+font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+    style -variant -weight -stretch -size -height -family

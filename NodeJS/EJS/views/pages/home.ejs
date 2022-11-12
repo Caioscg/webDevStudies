@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+    <%- include('../partials/head'); %>
+
+    <body class="container">
+        
+        <%- include('../partials/header'); %>
+
+        <main>
+            <div class="jumbotron">
+                <h1>Node com EJS</h1>
+                <p>Vamos aprender a trabalhar com arquivos EJS</p>
+                <p><%= subtitle %></p>  <!--subtitle vindo direto do server.js-->
+            </div>
+            <ul>
+                <% qualities.forEach(function(quality){ %>  <!--abri e fechei a tag -- aqui é JS  -- sem '=' pois ñ estou mostrando o conteudo, so entrando na array
+                    Usando o forEach, o 'quality' vai crescendo de 1 em 1, pegando todos os elementos da array items-->
+                    <li>
+                        <strong><%= quality.title %></strong> <%= quality.message %> <!--aqui é EJS, porém abro e fecho as tag de JS pois os elementos
+                        title e message so existem no server.js - tem q por o '=', pois estou printando na tela, mostrando o conteúdo -->
+                    </li>
+                <% }) %> <!--abri e fechei a tag -- aqui é JS -- mas faz parte da tag JS de cima -->
+            </ul>
+        </main>
+
+        <%- include('../partials/footer'); %>
+
+    </body>
+
+    
+</html>

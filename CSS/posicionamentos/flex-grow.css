@@ -1,0 +1,16 @@
+.flexbox{
+    display: flex;
+    font-size: 100px;
+    border: dashed 1px red;
+}
+.item{
+    border: 1px solid;
+    width: 300px;
+}
+.item:nth-child(2), 
+.item:nth-child(3){
+    flex-grow: 1;
+}
+.item:nth-child(1) {
+    flex-grow: 2;
+}

@@ -1,0 +1,45 @@
+
+#a{
+    display: flex;
+    height: 30vh;
+    width: 50vw;
+    margin: 30px 0 0.8rem 25%;
+}
+#a span{
+    flex-grow: 1;
+    background-size: cover;
+    border: 1px solid;
+    margin-right: 0.8rem;
+    background-repeat: no-repeat;
+    background-image: url(http://source.unsplash.com/random); 
+}
+#b{
+    display: flex;
+    height: 30vh;
+    width: 50vw;
+    margin: 0.8rem 0 0.8rem 25%
+}
+#b span{
+    flex-grow: 1;
+    background-size: cover;
+    border: 1px solid;
+    margin-right: 0.8rem;
+    background-repeat: no-repeat;
+    background-image: url(http://source.unsplash.com/random);
+    
+}
+#c{
+    display: flex;
+    height: 30vh;
+    width: 50vw;
+    margin: 0.8rem 0 20px 25%
+}
+#c span{
+    flex-grow: 1;
+    background-size: cover;
+    border: 1px solid;
+    margin-right: 0.8rem;
+    background-repeat: no-repeat;
+    background-image: url(http://source.unsplash.com/random);
+    
+}

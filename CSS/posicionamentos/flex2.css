@@ -1,0 +1,27 @@
+.flexbox{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 100px;
+}
+.item:nth-child(1) {
+    order: 1;
+}
+/* fica    B       C        A(ordem 1)
+b e c com ordem 0 */
+
+.flexbox2{
+    display: flex;
+    border: 1px dashed red;
+    gap: 10px;  /*gap entre os elementos*/
+    align-items: flex-end;
+    flex-direction: column;
+    height: 80vh;
+    width: 80vw;
+}
+.item2{
+    background-color: gray;
+    border: 1px solid;
+    flex: 1;
+    font-size: 100px;
+    width: 20vw;
+}

@@ -1,0 +1,21 @@
+<script>
+    let degree = "40F"
+    let i=0, f, c, k, j=0, t=1
+    let array = []
+    for (let argument of degree) {
+        array[i] = argument
+        i++
+    }
+    if(array.toUpperCase().includes("F")) f=1
+    else if(array.toUpperCase().includes("C")) c=1
+    array.pop()
+    k = array.length
+    while (k>0) {
+        j = j + Number(array[k])*t
+        t *=10
+        k--
+    }
+    console.log(j)
+
+
+</script>

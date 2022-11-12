@@ -1,0 +1,17 @@
+<script>
+
+    function callback(name) {
+        console.log("antes de executar a callback")
+
+        name() //estou em uma callback
+
+        console.log("depois de executar a callback")
+    }
+
+    callback(
+        () => {                                 // essa arrow function entra no lugar do parametro 'name'
+            console.log("estou em uma callback")
+        }
+    )
+
+</script>

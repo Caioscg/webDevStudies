@@ -1,0 +1,44 @@
+<script>
+
+    let linguagens = ["html", "css", "js"]
+
+    //adicionar um elemento no fim
+    linguagens.push("nodejs")
+    console.log(linguagens) //["html", "css", "js", "nodejs"]
+
+    //adicionar no começo
+    linguagens.unshift("sql")
+    console.log(linguagens) //["sql", "html", "css", "js", "nodejs"]
+
+    //remover do fim
+    linguagens.pop()
+    console.log(linguagens) //["sql", "html", "css", "js"]
+
+    //remover do começo
+    linguagens.shift()
+    console.log(linguagens) //["html", "css", "js"]
+
+    //selecionar elementos da array
+    linguagens = ["html", "css", "js"]
+    console.log(linguagens.slice(1, 3)) //seleciona elementos do 1 ao 3, ou seja, "css" e "js"
+
+    //remover elementos da array
+    linguagens = ["html", "css", "js"]
+    linguagens.splice(1, 2) //remove o elemento na posição 1 e 2 elementos no total, a partir do primeiro
+    console.log(linguagens)
+    //so fica o html
+
+    //encontrar a posição de um elemento
+    linguagens = ["html", "css", "js"]
+    console.log(linguagens.indexOf("css")) // 1
+
+</script>
+
+<script>
+    //codigo que remove um elemento especifico da array
+    let linguagens2 = ["sql", "html", "css", "js", "nodejs"]
+    let remove = linguagens2.indexOf("html") //remove recebe a posição do html, ou seja, 1
+    linguagens2.splice(remove, 1)
+    console.log(linguagens2)
+
+</script>

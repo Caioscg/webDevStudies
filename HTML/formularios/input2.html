@@ -1,0 +1,43 @@
+<datalist id="urldata">
+    <option>https://meusite.com.br</option>
+    <option>https://meusite.com.br</option>
+    <option>https://meusite.com.br</option>
+</datalist>
+<form action="">
+    <label for="url">url</label>
+    <input id="url"
+    type="url"
+    placeholder="http://example.com.br"
+    size="20"
+    pattern=".*\.com\.br.*"
+    title="somente dominios .com.br serão aceitos"
+    required
+    list="urldata"
+    spellcheck="true" 
+    >
+    <!--speelcheck - correção ortografica-->
+    <button type="submit">Enviar</button>
+</form>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file"
+    accept="video/*"
+    multiple
+    files
+    >
+</form>
+
+<fieldset>
+    <legend>Choose your interests</legend>
+    <form action="">
+        <input type="checkbox" id="codding" name="interest"
+        value="codding" checked>
+        <label for="coding">Coding</label>
+    </form>
+    <form action="">
+        <input type="checkbox" id="music" name="interest"
+        value="music">
+        <label for="music">Music</label>
+        <!--interest=codding e music por exempo-->
+    </form>
+</fieldset>

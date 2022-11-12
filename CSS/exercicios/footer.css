@@ -1,0 +1,12 @@
+*{margin: 0;}
+div{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    border: 10px ridge lightcoral;
+}

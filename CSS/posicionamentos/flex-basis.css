@@ -1,0 +1,17 @@
+.flexbox{
+    display: flex;
+    border: dashed 1px red;
+    font-size: 100px;
+    height: 80vh;
+    flex-direction: column;
+
+}
+
+.item{
+    border: solid 1px;
+    width: 80vw;
+    
+}
+.item:nth-child(1){
+    flex-basis: 7000px;
+}

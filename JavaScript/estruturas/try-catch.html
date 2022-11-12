@@ -1,0 +1,15 @@
+<script>
+    function SayMyName (name = '') {
+        if (name === '') {
+            throw 'Nome e obrigatorio'
+        }
+
+        console.log('depois do erro') //essa mensagem nao e passada, é como se tivesse um return no throw
+    }
+    try {
+        SayMyName() 
+    }  catch(e) {       //captura o erro do throw
+        console.log(e)  //executa o throw
+    }
+
+</script>

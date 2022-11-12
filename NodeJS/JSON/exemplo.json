@@ -1,0 +1,21 @@
+{
+    "nome": "Caio Gonzaga",
+    "cidade": "Goiânia",
+    "Telefone": 62984505229,
+    "livros_favoritos": [
+        "A paciente silenciosa",
+        "Misery"
+    ],
+    "hobbies": {
+        "semana": "academia",
+        "fim_de_semana": {
+            "sabado": "tenis",
+            "domingo": [
+                "f1",
+                "netflix",
+                "futebol"
+            ]
+        }
+    }
+
+}

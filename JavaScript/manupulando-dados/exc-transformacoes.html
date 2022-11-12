@@ -1,0 +1,59 @@
+<script>
+    //contar os caracteres de strings, numbers e arrays
+
+    let str= "paralelepipedo"
+    console.log(str.length) //strings recebem .length
+    let numero = 1234
+    console.log(numero.length) //undefined- numbers nao recebem length
+    //solução:
+    console.log(String(numero).length)
+    console.log(["a", "b", "c"].length)
+
+</script>
+
+<script>
+    //transforma o numero para 2 casas decimais e troca ponto por vírgula
+
+    let N = 345.1231513
+
+    console.log(N.toFixed(2).replace(".", ",")) //toFixed- deixa com 2 casas
+    //replace troca um pelo outro
+    //o Numero agora é uma string
+
+</script>
+
+<script>
+    //transforme tudo para minusculo e maiusculo
+
+    let string = "aaaaaaaAAAAA"
+    console.log(string.toUpperCase()) //AAAAAAA
+    console.log(string.toLowerCase()) //aaaaaaa
+
+</script>
+
+<script>
+    //Separe um texto que contem espaços, em uma array, onde quando tiver um espaço seja uma nova posição da array.
+    //Depois, transforme o array em texto e onde eram espaços, coloque _
+
+    let phrase = "Eu quero viver o amor!"
+    let myArray = phrase.split(" ") //onde tiver espaço ele splita em outra posição da array
+    let phraseWithUnderline = myArray.join("_") //reuni as posições colocando _ para uni-las
+    console.log(phraseWithUnderline)
+
+</script>
+
+<script>
+    //verificar se a palavra 'Amor' existe na string
+
+    let frase = "Eu quero viver!"
+    console.log(frase.includes("Amor"))
+
+</script>
+
+<script>
+    //transformar uma cadeia de caracteres em elementos de uma array
+
+    let word = "manipulação"
+    console.log(Array.from(word)) //cria uma array de word
+
+</script>

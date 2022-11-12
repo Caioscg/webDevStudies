@@ -1,0 +1,37 @@
+<script>
+    let temperature = 37.2
+    let HighTemperature = temperature >= 37.5 //recebe uma condição, nesse caso é false
+    let mediumTemperature = temperature < 37.5 && temperature >=37 //nesse caso true
+
+    if (HighTemperature) {
+        console.log("febre alta")
+    }
+    else if (mediumTemperature) {
+        console.log("febre moderada")
+    }
+    else {
+        console.log("sem febre")
+    }
+</script>
+
+<script>
+    function calculate (number1, operator, number2) {
+        let result
+        if (operator == '+') {
+            result = number1 + number2
+        }
+        else if (operator == '-') {
+            result = number1 - number2
+        }
+        else if (operator == '*') {
+            result = number1 * number2
+        }
+        else if (operator == '/') {
+            result = number1 / number2
+        }
+        return result
+    }
+
+    console.log(calculate(4, '*', 8))
+
+</script>

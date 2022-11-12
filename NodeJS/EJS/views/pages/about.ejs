@@ -1,0 +1,20 @@
+<!DOCTYPE html>     <!--essa página será vizualizada após colocar o /sobre na URL-->
+
+    <%- include('../partials/head'); %>
+
+    <body class="container">
+        
+        <%- include('../partials/header', {pagina: 'About'}); %>
+
+        <main>
+            <div class="jumbotron">
+                <h1>Sobre mim</h1>
+                <p>Oi eu sou Caio e sou estudante de programação.</p>
+                <p><%= about %></p>
+            </div>
+        </main>
+
+        <%- include('../partials/footer'); %>
+
+    </body>
+</html>

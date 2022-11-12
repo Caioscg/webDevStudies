@@ -1,0 +1,35 @@
+<form action="">
+    <label for="email">Email:</label>
+    <input id="email"
+    type="email"
+    minlength="10"
+    maxlength="255"
+    placeholder="Digite seu email"
+    size="16"
+    required
+    pattern=".+@gmail\.com"
+    title="Só será aceito gmail"
+    list="suggest"
+    autocomplete="on"
+    >
+    <datalist id="sugest">
+        <option>a@gmail.com</option>
+        <option>b@gmail.com</option>
+        <option>c@gmail.com</option>
+    </datalist>
+    <button type="submit">Enviar</button>
+</form>
+
+<form action="">
+    <label for="senha">Senha:</label>
+    <input id="senha"
+    type="password"
+    placeholder="Digite a sua senha"
+    required
+    pattern="[0-9a-fA-F]{4,8}"
+    title="Coloque uma senha Hexadecimal, no minímo 4 caracteres e no máximo 8 caracteres"
+    autocomplete="new-password"
+    size="15"
+    />
+    <button type="submit">Enviar</button>
+</form>

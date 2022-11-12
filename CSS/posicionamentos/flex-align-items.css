@@ -1,0 +1,12 @@
+.flexbox{
+    display: flex;
+    font-size: 100px;
+    border: dashed 1px red;
+    flex-direction: column; /*a coluna é o eixo principal*/
+    align-items: center;    /* está alinhando no centro do eixo cruzado(vertical)*/
+    height: 80vh;
+}
+.item{
+    width: 400px;
+    border: 1px solid;
+}

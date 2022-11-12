@@ -1,0 +1,14 @@
+<script>
+
+    let subject = "create video" //se aqui fosse undefined, o primeiro console.log seria undefined e o 2 seria study, um possivel terceiro igual o 1 seria study
+
+    function createThink (subject) { //se nao tivesse parametro, os 2 console.log seriam study(sobrescreveria)
+        subject = "study"
+        return subject
+    }
+
+    console.log(subject)    //create video
+    console.log(createThink(subject))  // study
+
+
+</script>

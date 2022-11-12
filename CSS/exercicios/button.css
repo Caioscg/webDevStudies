@@ -1,0 +1,16 @@
+button{
+    font-size: 30px;
+    margin-right: 0.4rem;
+}
+div{
+    margin-top:5px;
+}
+div > button{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+div > button > img{
+    width: 1.7rem;
+    height: 1.7rem;
+}
