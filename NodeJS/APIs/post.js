@@ -8,5 +8,8 @@ app.listen('3000')  //TODO: colocar localhost:3000 no navegador
 
 //*  middleware (conteúdo da requisição)
 app.use(express.json())   //*  transforma em json
-
-app.route("/").post( (req, res) => res.send(req.body))
+                                            
+app.route("/").post( (req, res)=> {       //parametros (body lá no insomnia)
+    const {nome, cidade, livros_favoritos} = req.body   //TODO: colocar essas definições no json body(insomnia)
+    res.send(`Meu nome é: ${nome} e eu moro em: ${cidade}`)
+})
