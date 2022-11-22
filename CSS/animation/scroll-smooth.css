@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 2rem;
+    position: fixed;
+    font-size: 20px;
+    
+
+}
+
+#sobre {
+    background-color: lightcoral;
+}
+
+#servicos {
+    background-color: lightgreen;
+}
+
+#contato {
+    background-color: lightslategray;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 3rem;
+}
