@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+            color: white;
+
+            animation-name: example;
+            animation-duration: 2s;
+        }
+        
+        .linear {
+            animation-timing-function: linear;
+        }
+
+        .ease {
+            animation-timing-function: ease;
+        }
+
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+        .cube {
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .rotate-diagonal-1 {
+	        -webkit-animation: rotate-diagonal-1 0.4s linear both; /* shorthand */
+	        animation: rotate-diagonal-1 0.4s linear both;
+}
+
+        @keyframes example {
+            from { 
+                left: 0px;
+            }
+            to {
+                left: calc(100% - 100px)  /* pra não passar da tela */
+            }
+        }
+
+        @-webkit-keyframes rotate-diagonal-1 {
+        0% {
+            -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                    transform: rotate3d(1, 1, 0, 0deg);
+        }
+        50% {
+            -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                    transform: rotate3d(1, 1, 0, -180deg);
+        }
+        100% {
+            -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                    transform: rotate3d(1, 1, 0, -360deg);
+        }
+        }
+        @keyframes rotate-diagonal-1 {
+        0% {
+            -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                    transform: rotate3d(1, 1, 0, 0deg);
+        }
+        50% {
+            -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                    transform: rotate3d(1, 1, 0, -180deg);
+        }
+        100% {
+            -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                    transform: rotate3d(1, 1, 0, -360deg);
+        }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="linear">Linear</div>
+    <div class="ease">Ease</div>
+    <div class="ease-in">Ease-in</div>
+    <div class="ease-out">Ease-out</div>
+    <div class="ease-in-out">Ease-in-out</div>
+    <div class="cube">Cube</div>
+    <div class="rotate-diagonal-1 ">Animation Generator</div>  <!--TODO: animatista.net -->
+
+</body>
+</html>
