@@ -3,17 +3,24 @@ body{
     display:grid;
     height: 80vh;
     grid-template-areas:
-    "header header"
-    "main aside"
-    "footer footer";
-    grid-template-rows: 40px 1fr 30px;
+    "header header"     /* região top */
+    "main aside"        /* região mid */
+    "footer footer";    /* região bottom */
+
+    grid-template-rows: 40px 1fr 30px; /*! header: 40px heigh, main: 1fr, footer: 30px */
+
+    grid-template-columns: 1fr 500px; /*! main: 1fr width, aside: 500px */
+    /** grid-template-rows -> para setar as alturas */
+    /** grid-template-columns -> para setar as larguras */
+
     /*1fr significa 1 fração, que ocupa todo o espaço tirando o 40px e 30px */
-    grid-template-columns: 1fr 500px;
 }
 
 header{
     font-size: 40px;
+
     grid-area: header;
+
     background-color: green;
     display: flex;
     justify-content: space-between;
@@ -23,18 +30,24 @@ header{
 
 main{
     font-size: 15vw;
+
     grid-area: main;
+
     background-color: red;
 }
 
 aside{
     font-size: 5vw;
+
     grid-area: aside;
+    
     background-color: blue;
 }
 
 footer{
     font-size: 30px;
+
     grid-area: footer;
+
     background-color: gray;
 }
